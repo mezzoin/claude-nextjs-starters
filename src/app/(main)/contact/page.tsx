@@ -45,7 +45,8 @@ export default function ContactPage() {
       });
 
       reset();
-    } catch {
+    } catch (error) {
+      console.error("Contact form submission error:", error);
       toast.error("전송에 실패했습니다.", {
         description: "잠시 후 다시 시도해주세요.",
       });

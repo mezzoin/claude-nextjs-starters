@@ -28,9 +28,6 @@ export interface FeatureItem {
   icon: string;
 }
 
-// Contact 폼 데이터 타입
-export interface ContactFormData {
-  name: string;
-  email: string;
-  message: string;
-}
+// Contact 폼 데이터 타입 (Zod 스키마에서 추론)
+// 실제 타입은 @/lib/validations/contact.ts의 ContactFormValues를 사용
+export type { ContactFormValues as ContactFormData } from "@/lib/validations/contact";

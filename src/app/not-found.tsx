@@ -80,11 +80,13 @@ export default function NotFound() {
               홈으로 가기
             </Link>
           </Button>
-          <Button asChild variant="outline" size="lg" onClick={() => history.back()}>
-            <button type="button">
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              이전 페이지
-            </button>
+          <Button
+            variant="outline"
+            size="lg"
+            onClick={() => window.history.back()}
+          >
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            이전 페이지
           </Button>
         </motion.div>
       </Container>
